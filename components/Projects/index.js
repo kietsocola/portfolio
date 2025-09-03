@@ -5,7 +5,7 @@ import { FaStar, FaArrowRight, FaQuoteRight } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
 
 import { projects } from "../../data/projects.json"
-import userInfo from "../../data/usersInfo.json"
+import usersInfo from "../../data/usersInfo.json"
 
 function Projects() {
 
@@ -15,7 +15,7 @@ function Projects() {
 
     async function fetchRepos() {
         let res;
-        let url = `https://api.github.com/users/${userInfo.github_username}/repos`
+        let url = `https://api.github.com/users/${usersInfo.github_user}/repos`
         if (localStorage.getItem("user_repos") === null) {
             try {
                 setLoading(true)
@@ -68,7 +68,7 @@ function Projects() {
                     projects.length > 0 ?
                         projects.slice(0, 6).map((list, i) => {
                             return (
-                                <div data-aos="zoom-in" key={i} className={`box w-full h-auto bg-dark-200 rounded-[5px] relative top-[50px] transition-all mb-[50px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} key={list}>
+                                <div data-aos="zoom-in" key={i} className={`box w-full h-auto bg-dark-200 rounded-[5px] relative top-[50px] transition-all mb-[50px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`}>
                                     <div className="imgCont"></div>
                                     <style jsx>{`
                                 .imgCont{

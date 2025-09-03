@@ -11,7 +11,7 @@ export default function Header({ children }) {
     const [reposcount, setReposCount] = useState(0)
     const [avatar, setAvatar] = useState("")
 
-    const userName = usersInfo.github_username;
+    const userName = usersInfo.github_user;
 
     function openResume() {
 
@@ -23,7 +23,7 @@ export default function Header({ children }) {
         let res;
         if (localStorage.getItem("repo_counts") === null) {
 
-            res = await fetch(`https://api.github.com/users/${userName}`)
+            res = await fetch(`https://api.github.com/users/${usersInfo.github_user}`)
             let data = await res.json()
 
             if (data && data.public_repos !== undefined) {
