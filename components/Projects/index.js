@@ -15,7 +15,7 @@ function Projects() {
 
     async function fetchRepos() {
         let res;
-        let url = `https://api.github.com/users/${usersInfo.github_user}/repos`
+        let url = `https://api.github.com/users/kietsocola/repos`
         if (localStorage.getItem("user_repos") === null) {
             try {
                 setLoading(true)
@@ -141,7 +141,9 @@ function GithubRepo({ repos }) {
                     repos.slice(0, 3).map((rep, i) => {
                         return (
                             <div data-aos="zoom-in" key={i} className="relative w-full h-[180px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px] ">
-                                <h2 className="w-full text-[20px] ">{rep.name}</h2>
+                                <h2 className="w-full text-[20px]">
+                                    {rep.name.length > 15 ? rep.name.slice(0, 15) + "..." : rep.name}
+                                </h2>
                                 <br />
                                 <p className=" w-full text-[15px] text-white-300 ">{rep.description && rep.description.length > 50 ? rep.description.slice(0, 60) + "...." : rep.description}</p>
                                 <br />

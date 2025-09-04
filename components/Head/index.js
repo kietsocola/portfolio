@@ -8,12 +8,12 @@ export default function DomHead({ pageName = "Home Page" }) {
             <title>{userInfo.github_username} Portfolio - {pageName} </title>
             {/* meta tags begins */}
             {/* Primary Meta Tags */}
-            <meta name="title" content="Benrobo- Personal Portfolio." />
+            <meta name="title" content="Kietdev27- Personal Portfolio." />
             <meta name="description" content="Generated using BaayMax." />
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://github.com/benrobo/portfolio-v3/" />
-            <meta property="og:title" content="Benrobo- Personal Portfolio" />
+            <meta property="og:url" content="https://github.com/kietsocola" />
+            <meta property="og:title" content="Tuan Kiet- Personal Portfolio" />
             <meta property="og:description" content="Generating of portfolio just got easier. Using BaayMax and a single command, you're on set." />
             <meta property="og:image" content="https://github.com/Benrobo/baaymax-assets/blob/main/app.png?raw=true" />
 

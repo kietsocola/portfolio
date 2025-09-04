@@ -141,7 +141,7 @@ function GithubRepo() {
 
     async function fetchRepos() {
         let res;
-        let url = `https://api.github.com/users/${userInfo.github_username}/repos`
+        let url = `https://api.github.com/users/${userInfo.github_user}/repos`
         if (localStorage.getItem("user_repos") === null) {
             try {
                 setLoading(true)

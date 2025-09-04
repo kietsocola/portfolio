@@ -31,7 +31,7 @@ export function DataContextProvider({ children }) {
 
     async function fetchReposCount() {
         try {
-            let res = await fetch(`https://api.github.com/users/${usersInfo.github_username}`)
+            let res = await fetch(`https://api.github.com/users/${usersInfo.github_user}`)
             let data = await res.json()
 
             if (data && data.public_repos !== undefined) {

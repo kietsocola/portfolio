@@ -14,7 +14,7 @@ export default function Intro() {
             <div className={`w-full flex items-start justify-between flex-row flex-wrap-reverse`}>
                 <div className={`w-full h-auto p-[10px] relative container md:w-[50%]`}>
                     {/* boxes */}
-                    <IntroCards data={skills.skill} />
+                    <IntroCards data={skills.experience} />
                 </div>
                 <div className={`w-full h-auto relative top-[20px] p-[10px] mb-[30px] md:mb-0 md:w-[45%]`}>
                     <p className={`text-[12px] text-white-200 `}>Introduce</p>
@@ -53,42 +53,60 @@ function IntroCards({ data }) {
         <>
             {
                 data.length > 0 ?
-                    data.map((skill, i) => {
+                    data.map((experience, i) => {
                         return (
-                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[120px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] relative transition-all mt-4 hover:shadow-2xl `}>
-                                <div className={`flex flex-col items-start justify-start`}>
-                                    <p className={`m-0 font-extrabold text-green-100 `}>
-                                        {skill.name}
+                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[180px] p-[25px] rounded-[12px] bg-gradient-to-br from-dark-200 to-dark-300 m-[0px] relative transition-all mt-6 hover:shadow-2xl hover:scale-105 border border-dark-100`}>
+                                <div className={`flex flex-col items-start justify-start h-full`}>
+                                    <div className="flex items-center gap-3 mb-3">
+                                        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                                        <p className={`m-0 text-[18px] font-extrabold text-green-100 tracking-wide`}>
+                                            {experience.company}
+                                        </p>
+                                    </div>
+                                    <p className={`text-[14px] text-green-200 font-semibold mb-2 uppercase tracking-wider`}>
+                                        {experience.position}
                                     </p>
-                                    <span className={`text-[12px] text-white-300 pt-[10px]  `}>
-                                        {skill.description}
+                                    <span className={`text-[13px] text-white-200 leading-relaxed flex-1`}>
+                                        {experience.description}
                                     </span>
                                 </div>
-                                <div className={`absolute bottom-[10px]`}>
-                                    <a className={` text-[14px] text-white-200 font-bold underline `}>
-                                        {skill.projects_completed} Projects
-                                    </a>
+                                <div className={`absolute bottom-[15px] left-[25px] flex items-center gap-2`}>
+                                    <ion-icon name="time-outline" class="text-green-400 text-[16px]"></ion-icon>
+                                    <span className={`text-[13px] text-green-300 font-bold bg-green-900/20 px-3 py-1 rounded-full`}>
+                                        {experience.duration}
+                                    </span>
                                 </div>
-                                <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
+                                <div className="absolute top-[20px] right-[20px] w-12 h-12 bg-green-400/10 rounded-full flex items-center justify-center">
+                                    <ion-icon name="briefcase" class={`text-green-400 text-[20px]`}></ion-icon>
+                                </div>
                             </div>
                         )
                     })
                     :
-                    <div data-aos="zoom-in-up" className={`w-full h-[120px] p-[20px] rounded-[5px] bg-dark-200 m-[0px] relative transition-all mt-4 hover:shadow-2xl `}>
-                        <div className={`flex flex-col items-start justify-start`}>
-                            <p className={`m-0 font-extrabold text-green-100 `}>
-                                Frontend Development
+                    <div data-aos="zoom-in-up" className={`w-full h-[160px] p-[25px] rounded-[12px] bg-gradient-to-br from-dark-200 to-dark-300 m-[0px] relative transition-all mt-6 hover:shadow-2xl hover:scale-105 border border-dark-100`}>
+                        <div className={`flex flex-col items-start justify-start h-full`}>
+                            <div className="flex items-center gap-3 mb-3">
+                                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                                <p className={`m-0 text-[18px] font-extrabold text-green-100 tracking-wide`}>
+                                    Tech Company
+                                </p>
+                            </div>
+                            <p className={`text-[14px] text-green-200 font-semibold mb-2 uppercase tracking-wider`}>
+                                Software Developer
                             </p>
-                            <span className={`text-[12px] text-white-300 pt-[10px]  `}>
+                            <span className={`text-[13px] text-white-200 leading-relaxed flex-1`}>
                                 Development of beautiful and unique user interfaces.
                             </span>
                         </div>
-                        <div className={`absolute bottom-[10px]`}>
-                            <a className={` text-[14px] text-white-200 font-bold underline `}>
-                                60 Projects
-                            </a>
+                        <div className={`absolute bottom-[15px] left-[25px] flex items-center gap-2`}>
+                            <ion-icon name="time-outline" class="text-green-400 text-[16px]"></ion-icon>
+                            <span className={`text-[13px] text-green-300 font-bold bg-green-900/20 px-3 py-1 rounded-full`}>
+                                2020 - 2023
+                            </span>
                         </div>
-                        <ion-icon name="color-wand" class={`absolute top-[10px] right-[10px] text-green-400 p-[5px] `}></ion-icon>
+                        <div className="absolute top-[20px] right-[20px] w-12 h-12 bg-green-400/10 rounded-full flex items-center justify-center">
+                            <ion-icon name="briefcase" class={`text-green-400 text-[20px]`}></ion-icon>
+                        </div>
                     </div>
             }
         </>

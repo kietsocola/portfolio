@@ -1,19 +1,10 @@
 {
-    "skill": [
+    "experience": [
         {
-            "name": "Backend Development",
-            "description": "Development of complex and scalable backend architecture.",
-            "projects_completed": "20+"
-        },
-        {
-            "name": "Frontend Development",
-            "description": "Development beautiful and responsive user interface.",
-            "projects_completed": "20+"
-        },
-        {
-            "name": "Database Design",
-            "description": "Development and Designing of complex scalable database achitecture.",
-            "projects_completed": "20+"
+            "company": "BOOSTECH",
+            "position": "FullStack Software Engineer",
+            "duration": "5/2025 - Present",
+            "description": "Developing and maintaining web applications using Spring boot and React, collaborating with cross-functional teams to deliver high-quality software solutions."
         }
     ]
 }
