@@ -55,8 +55,8 @@ function IntroCards({ data }) {
                 data.length > 0 ?
                     data.map((experience, i) => {
                         return (
-                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[180px] p-[25px] rounded-[12px] bg-gradient-to-br from-dark-200 to-dark-300 m-[0px] relative transition-all mt-6 hover:shadow-2xl hover:scale-105 border border-dark-100`}>
-                                <div className={`flex flex-col items-start justify-start h-full`}>
+                            <div data-aos="zoom-in-up" key={i} className={`w-full h-[230px] md:h-[180px] p-[25px] rounded-[12px] bg-gradient-to-br from-dark-200 to-dark-300 m-[0px] relative transition-all mt-6 hover:shadow-2xl hover:scale-105 border border-dark-100`}>
+                                <div className={`flex flex-col items-start justify-start h-full pb-10 md:pb-0`}>
                                     <div className="flex items-center gap-3 mb-3">
                                         <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                                         <p className={`m-0 text-[18px] font-extrabold text-green-100 tracking-wide`}>
@@ -83,8 +83,8 @@ function IntroCards({ data }) {
                         )
                     })
                     :
-                    <div data-aos="zoom-in-up" className={`w-full h-[160px] p-[25px] rounded-[12px] bg-gradient-to-br from-dark-200 to-dark-300 m-[0px] relative transition-all mt-6 hover:shadow-2xl hover:scale-105 border border-dark-100`}>
-                        <div className={`flex flex-col items-start justify-start h-full`}>
+                    <div data-aos="zoom-in-up" className={`w-full h-[200px] md:h-[160px] p-[25px] rounded-[12px] bg-gradient-to-br from-dark-200 to-dark-300 m-[0px] relative transition-all mt-6 hover:shadow-2xl hover:scale-105 border border-dark-100`}>
+                        <div className={`flex flex-col items-start justify-start h-full pb-10 md:pb-0`}>
                             <div className="flex items-center gap-3 mb-3">
                                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                                 <p className={`m-0 text-[18px] font-extrabold text-green-100 tracking-wide`}>

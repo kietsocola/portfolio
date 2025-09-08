@@ -1,0 +1,25 @@
+{
+    "awards": [
+        {
+            "title": "Academic Excellence Scholarship",
+            "organization": "Saigon University",
+            "description": "Received academic excellence scholarship 5 consecutive times for outstanding academic performance",
+            "year": "2022-2026",
+            "icon": "trophy"
+        },
+        {
+            "title": "TOEIC 595",
+            "organization": "ETS",
+            "description": "Achieved TOEIC score of 595, demonstrating strong English communication skills",
+            "year": "2025",
+            "icon": "language"
+        },
+        {
+            "title": "2nd Place Hackathon",
+            "organization": "Saigon University",
+            "description": "Won second place in SGU Hackathon competition with innovative technology project",
+            "year": "2025",
+            "icon": "code-slash"
+        }
+    ]
+}

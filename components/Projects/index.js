@@ -123,9 +123,9 @@ function Projects() {
                         ""
                 }
             </div>
-            <div className="w-full h-auto mt-4 mb-5 p-3 flex flex-row flex-wrap items-center justify-between ">
+            {/* <div className="w-full h-auto mt-4 mb-5 p-3 flex flex-row flex-wrap items-center justify-between ">
                 {loading ? "Loading..." : error !== null ? <p>{error}</p> : <GithubRepo repos={repo} />}
-            </div>
+            </div> */}
         </div>
     )
 }
@@ -138,7 +138,7 @@ function GithubRepo({ repos }) {
         <>
             {
                 repos.length > 0 ?
-                    repos.slice(0, 3).map((rep, i) => {
+                    repos.slice(0, 0).map((rep, i) => {
                         return (
                             <div data-aos="zoom-in" key={i} className="relative w-full h-[180px] bg-dark-200 flex flex-col items-start justify-start px-4 py-3 mt-2 rounded-md md:w-[300px] ">
                                 <h2 className="w-full text-[20px]">
