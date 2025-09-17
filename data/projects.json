@@ -15,7 +15,7 @@
             "title": "Adaptive Learning for Moodle (Microservice)",
             "imageUrl": "https://www.completeconnection.ca/wp-content/uploads/2019/02/Adaptive-Personalized-Learning.jpg",
             "project_url": "#",
-            "description": "An adaptive learning platform integrated with Moodle, built with React and Spring Boot, using Docker, Kafka, and PostgreSQL.",
+            "description": "An adaptive learning platform integrated with Moodle, built with React and Spring Boot, Docker.",
             "tags": [
                 "spring",
                 "docker",
