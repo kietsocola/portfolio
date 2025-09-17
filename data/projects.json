@@ -1,18 +1,46 @@
 {
-    "projects":[
+    "projects": [
+        {
+            "title": "ERP System (Microservice architecture)",
+            "imageUrl": "https://cdn.fpt-is.com/vi/phan-mem-erp-gia-bao-nhieu-1.png",
+            "project_url": "#",
+            "description": "An ERP system built with React and Spring Boot, using REST API, Docker, Kafka, and PostgreSQL.",
+            "tags": [
+                "spring",
+                "react",
+                "kafka"
+            ]
+        },
+        {
+            "title": "Adaptive Learning for Moodle (Microservice)",
+            "imageUrl": "https://www.completeconnection.ca/wp-content/uploads/2019/02/Adaptive-Personalized-Learning.jpg",
+            "project_url": "#",
+            "description": "An adaptive learning platform integrated with Moodle, built with React and Spring Boot, using Docker, Kafka, and PostgreSQL.",
+            "tags": [
+                "spring",
+                "docker",
+                "react"
+            ]
+        },
         {
             "title": "Flight Management System (clone Bamboo Airways)",
             "imageUrl": "https://github.com/duylam15/react-flight-management-system/raw/main/image.png",
             "project_url": "https://github.com/kietsocola/FlightManagementSystem",
             "description": "A flight management system built with React and Spring boot, using REST API, socket.io, and MySQL.",
-            "tags": [ "spring", "react" ]
+            "tags": [
+                "spring",
+                "react"
+            ]
         },
         {
             "title": "Lightweight FER with MobileNetV3",
             "imageUrl": "https://github.com/lamkbvn/DO_AN_PPNCKH/raw/main/Img_readme/pipeline.jpg",
             "project_url": "https://github.com/kietsocola/lightweight-emotion-recognition",
             "description": "Lightweight Facial Emotion Recognition with MobileNetV3 under Low-Light Conditions.",
-            "tags": [ "python", "CNN" ]
+            "tags": [
+                "python",
+                "CNN"
+            ]
         }
     ]
 }
